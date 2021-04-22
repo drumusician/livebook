@@ -24,6 +24,7 @@ COPY priv ./priv
 COPY assets ./assets
 COPY mix.exs .
 COPY mix.lock .
+COPY README.md ./README.md
 
 # Fetch the application dependencies and build the application
 RUN mix deps.get
