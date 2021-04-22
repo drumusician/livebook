@@ -48,7 +48,6 @@ WORKDIR /home/app
 COPY --from=app_builder /app/_build .
 RUN chown -R app: ./prod
 USER app
-RUN ls /livebook
 
 # Run the Phoenix app
 CMD ["./prod/rel/livebook/bin/livebook", "start"]
