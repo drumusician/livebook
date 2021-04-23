@@ -1,10 +1,10 @@
 import Config
 
 # Default bind and port for production
-config :livebook, LivebookWeb.Endpoint, http: [ip: {0, 0, 0, 0}, port: 8081]
+config :livebook, LivebookWeb.Endpoint, http: [ip: {127, 0, 0, 1}, port: 8081]
 
 # Start log-level in notice by default to reduce output
-config :logger, level: :notice
+config :logger, level: :info
 
 # ## SSL Support
 #
