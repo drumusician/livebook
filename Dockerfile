@@ -40,7 +40,7 @@ FROM alpine AS app
 ENV LANG=C.UTF-8
 
 # Install openssl
-RUN apk add --update openssl ncurses-libs postgresql-client && \
+RUN apk add --update openssl ncurses-libs && \
     rm -rf /var/cache/apk/*
 
 # Copy over the build artifact from the previous step and create a non root user
